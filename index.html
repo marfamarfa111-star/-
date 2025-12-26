@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მემკვიდრეობითი სამართალი რომში</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ფონის სურათი -->
+    <div class="background-image"></div>
+    
+    <!-- მთავარი კონტეინერი -->
+    <div class="container">
+        <header>
+            <h1 class="title">მემკვიდრეობითი სამართალი რომში</h1>
+            <div class="decoration-line"></div>
+        </header>
+        
+        <!-- პრეზენტაციის სლაიდები -->
+        <main class="slides-container">
+            <!-- სლაიდები დინამიურად ჩაიტვირთება JavaScript-ით -->
+        </main>
+        
+        <!-- ნავიგაციის ღილაკები -->
+        <div class="navigation">
+            <button id="prev-btn" class="nav-btn">
+                <i class="fas fa-chevron-left"></i> წინა
+            </button>
+            <div class="slide-indicator">
+                <span id="current-slide">1</span> / <span id="total-slides">8</span>
+            </div>
+            <button id="next-btn" class="nav-btn">
+                შემდეგი <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- დამატებითი კონტროლები -->
+        <div class="controls">
+            <button id="auto-play-btn" class="control-btn">
+                <i class="fas fa-play"></i> ავტო-გადართვა
+            </button>
+            <button id="restart-btn" class="control-btn">
+                <i class="fas fa-redo"></i> თავიდან დაწყება
+            </button>
+            <button id="fullscreen-btn" class="control-btn">
+                <i class="fas fa-expand"></i> სრულ ეკრანზე
+            </button>
+        </div>
+        
+        <!-- ავტორების ინფორმაცია -->
+        <footer>
+            <p>ავტორები: ანა გვაგვალია, ანა მგელაძე</p>
+        </footer>
+    </div>
+    
+    <!-- ხმის ეფექტებისთვის (დარეკვა ღილაკზე დაჭერისას) -->
+    <audio id="click-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" preload="auto"></audio>
+    
+    <script src="js.js"></script>
+</body>
+</html>
